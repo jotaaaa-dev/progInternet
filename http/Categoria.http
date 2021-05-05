@@ -1,0 +1,39 @@
+// Teste de Requisições REST - Categorias
+@baseUrl = http://localhost:4000/categorias
+@id = 6091d3d71411b71440ee5fc9
+
+###
+// GET - Listar todas as categorias
+GET  {{baseUrl}}
+Content-Type: application/json
+
+###
+// GET - Listar a categoria pelo id
+GET {{baseUrl}}/{{id}}
+Content-Type: application/json
+
+###
+// DELETE - Apaga a categoria pelo id
+DELETE {{baseUrl}}/{{id}}
+Content-Type: application/json
+
+###
+// POST - Inclui uma nova categoria
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+    "nome": "Sushi",
+    "status": "ativo"
+}
+
+###
+// PUT - Altera uma categoria
+PUT {{baseUrl}}
+Content-Type: application/json
+
+{
+    "_id": "6091e882c8c2162a92c67d16",
+    "nome": "Temakeria",
+    "status": "inativo"
+}

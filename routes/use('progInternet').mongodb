@@ -1,0 +1,12 @@
+use('progInternet')
+
+db.categorias.insertOne({
+  "nome": "Cantinas",
+  "status": "ativo",
+  "foto": {
+    "originalName": "massas.png",
+    "path": "public/uploads/massas.png",
+    "size": 20771,
+    "mimetype": "image/png"
+  }
+})
